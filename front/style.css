@@ -1,0 +1,44 @@
+body {
+  background-color: #d4ddf8;
+}
+h1 {
+  font-family: "Russo One", sans-serif;
+  margin: 1cm;
+}
+h2 {
+  margin: 20px;
+}
+.container1 {
+  margin-top: 50px;
+  margin-left: 330px;
+}
+form {
+  background-color: #ffffff;
+  width: 70%;
+  margin: 0 auto;
+  padding: 15px;
+}
+.row {
+  margin-top: 10px;
+}
+.pack {
+  background-color: rgb(200, 200, 250);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 700px;
+  min-height: 120px;
+}
+.params {
+  margin-left: 250px;
+}
+.description {
+  margin-right: 10px;
+  width: 500px;
+  height: 200px;
+}
+.description-block {
+  margin-top: 10px;
+}
+p {
+  margin: 0;
+}

@@ -1,5 +1,5 @@
 body {
-  background-color: #d4ddf8;
+  background-color: #ffffff;
 }
 h1 {
   font-family: "Russo One", sans-serif;
@@ -7,10 +7,6 @@ h1 {
 }
 h2 {
   margin: 20px;
-}
-.container1 {
-  margin-top: 50px;
-  margin-left: 330px;
 }
 form {
   background-color: #ffffff;
@@ -28,17 +24,30 @@ form {
   max-width: 700px;
   min-height: 120px;
 }
-.params {
-  margin-left: 250px;
-}
 .description {
-  margin-right: 10px;
   width: 500px;
-  height: 200px;
+  max-height: 200px;
 }
 .description-block {
   margin-top: 10px;
 }
 p {
   margin: 0;
+}
+.container {
+  margin: 0;
+  padding-right: 300;
+}
+.generation-button-img {
+  width: 50px;
+  text-align: center;
+  margin-bottom: 2px;
+}
+.generation-button {
+  width: 60px;
+  height: 60px;
+  padding: 0;
+}
+.wastebasket-img {
+  width: 50px;
 }

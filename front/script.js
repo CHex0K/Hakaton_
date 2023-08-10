@@ -1,8 +1,6 @@
+document.querySelector(".generation").onclick = myClick;
 
-async function myClick1() {
-  alert(await eel.print_text()());
-  }
-
- async function myClick() {
-    document.querySelector(".description").value = await eel.generate_textJS()();
-  }
+function myClick() {
+  let description = document.querySelector(".description").value;
+  let name = document.querySelector(".name").value;
+}

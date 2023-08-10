@@ -29,7 +29,7 @@
     <div class="text-center">
       <h1>
         <font color="black" size="7"
-          >Калькулятор увеличения продаж на маркетплейсах</font
+          >ШАБЛОН</font
         >
       </h1>
     </div>
@@ -52,7 +52,7 @@
               <div class="carousel-item w-100">
                 <figure class="figure">
                   <img
-                    src="https://images.wbstatic.net/big/new/86210000/86212376-1.jpg"
+                    src="https://basket-11.wb.ru/vol1619/part161938/161938879/images/c246x328/4.webp"
                     width="500"
                     class="figure-img img-fluid rounded"
                     alt="..."
@@ -128,7 +128,7 @@
             alt="..."
           />
           <img
-            src="https://images.wbstatic.net/big/new/86210000/86212376-1.jpg"
+            src="https://basket-11.wb.ru/vol1619/part161938/161938879/images/c246x328/4.webp"
             class="figure-img img-fluid rounded"
             alt="..."
           />
@@ -144,45 +144,29 @@
           />
         </div>
         <!--end region foto-galery-->
+        <!--start region form-->
+        <div class = "container1 col-4">
+          <form action="">
+            <div class="params">
+              <input type="file" accept="image/*" id="files" multiple />
+              <h2>Характеристики товара</h2>
+              <div>
+                <label > Название: <input placeholder="Название товара" type="text" class="name" required/></label>
+                <label > Категория: <input placeholder="Категория товара" type="text" class="item" required/> </label>
+              </div>
+              <div class="description-block">
+                <div><p>Описание:</p></div>
+                <textarea placeholder="Введите описание" class="description"></textarea>
+                <br>
+                <button type="submit" class="generation-button"><img src="regeneration.png" class="generation-button-img" onclick="func1()"></button>
+                <button type="reset" class="wastebasket-button"><img src="wastebasket.png" class="wastebasket-img"></button>
+                </br>
+              </div>
+            </div>
+        </form>
+          <!--end region form-->
       </div>
     </div>
-    <div class = "container1">
-      <!--start region form-->
-      <div class="params">
-        <input type="file" accept="image/*" id="files" multiple />
-        <h2>Характеристики товара</h2>
-        <div>
-          <label> Предмет: <input type="text" class="item" /> </label>
-          <label> Название: <input type="text" class="name" /></label>
-          <label> Бренд: <input type="text" class="brand" /></label>
-        </div>
-        <div class="description-block">
-          <div><p>Описание:</p></div>
-          <input type="text" class="description"/>
-          <br>
-          <button type="button" class="generation">Cгенерировать</button>
-          <button type="button" class="btn btn-outline-primary">Очистить</button>
-          </br>
-        </div>
-        <div class="pack">
-          <p>Упаковка</p>
-          <div class="row">
-            <div class="col-4 text-center">
-              <p class="">Высота, см</p>
-              <input type="text" class="pack-height" />
-            </div>
-            <div class="col-4 text-center">
-              <p class="">Длинна, см</p>
-              <input type="text" class="pack-long" />
-            </div>
-            <div class="col-4 text-center">
-              <p class="">Ширина, см</p>
-              <input type="text" class="pack-width" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--end region form-->
     </div>
   </body>
 </html>

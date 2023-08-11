@@ -16,7 +16,7 @@ form {
 }
 .row {
   margin-top: 10px;
-  width: auto;
+  width: 1500px;
 }
 .pack {
   background-color: rgb(200, 200, 250);
@@ -26,7 +26,8 @@ form {
   min-height: 120px;
 }
 .description,
-.feedback {
+.feedback,
+.keyWords {
   width: 500px;
   max-height: 200px;
 }
@@ -57,8 +58,15 @@ p {
   width: 500px;
   height: 500px;
   margin: 50px;
+  margin-right: 0px;
   background-color: antiquewhite;
 }
 .container1 {
   width: 550px;
+}
+.calc2 {
+  width: 300px;
+  height: 500px;
+  margin: 50px;
+  background-color: antiquewhite;
 }

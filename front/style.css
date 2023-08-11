@@ -25,7 +25,8 @@ form {
   max-width: 700px;
   min-height: 120px;
 }
-.description {
+.description,
+.feedback {
   width: 500px;
   max-height: 200px;
 }
@@ -51,4 +52,13 @@ p {
 }
 .wastebasket-img {
   width: 50px;
+}
+.calc {
+  width: 500px;
+  height: 500px;
+  margin: 50px;
+  background-color: antiquewhite;
+}
+.container1 {
+  width: 550px;
 }

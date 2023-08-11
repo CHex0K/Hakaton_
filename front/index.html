@@ -44,6 +44,7 @@
                     width="500"
                     class="figure-img img-fluid rounded"
                     alt="..."
+                    id="mainImage"
                   />
                 </figure>
               </div>
@@ -109,7 +110,7 @@
             <!--end region carousel-->
 
             <div class="justify-content-center">
-              <button type="button" class="i-1">
+              <button type="button" class="i-1" onclick="setImg()">
                 Перегенерировать фотографии
               </button>
             </div>
@@ -125,6 +126,8 @@
             src="https://basket-10.wb.ru/vol1370/part137005/137005928/images/big/1.jpg"
             class="figure-img img-fluid rounded"
             alt="..."
+            id="mainImage1"
+            name = "img1"
           />
           <img
             src="https://basket-11.wb.ru/vol1619/part161938/161938879/images/c246x328/4.webp"
@@ -171,15 +174,15 @@
             /></label>
           </div>
 
+          <label>Выберите нейросеть:</label>
+          <br><input type="radio" id="AI_1" value="gpt" name="nameofAI" class="1" onclick="select_AI()"><label >GPT</label></br>
+          <input type="radio" id="AI_2" value="llama2" name="nameofAI" class="2" onclick="select_AI()"><label>llama2</label>
+          <div><p>Ключевые слова:</p></div>
+          <textarea
+            placeholder="По этим словам часто ищут товар"
+            class="keyWords"
+          ></textarea>
           <div class="description-block">
-            <label>Выберите нейросеть:</label>
-            <br><input type="radio" id="AI_1" value="gpt" name="nameofAI" class="1" onclick="select_AI()"><label >GPT</label></br>
-            <input type="radio" id="AI_2" value="llama2" name="nameofAI" class="2" onclick="select_AI()"><label>llama2</label>
-            <div><p>Ключевые слова:</p></div>
-            <textarea
-              placeholder="По этим словам часто ищут товар"
-              class="keyWords"
-            ></textarea>
             <div><p>Описание:</p></div>
             <textarea
               placeholder="Введите описание"
@@ -229,6 +232,7 @@
         <br><label>Рейтинг: <br> <input placeholder="Рейтинг" type="text" class="rating" required/></br></label></br>
         <br><label>В наличии: <br> <input placeholder="Количество" type="text" class="inStock" required/></br></label></br>
         <br><label>Отзывы: <br> <input placeholder="Количество" type="text" class="Feedback" required/></br></label></br>
+        <br><label>Символы в описании: <br> <input placeholder="Количество символов" type="text" class="FeedbackCount" required/></br></label></br>
       </div>
       <div class="calc2 text-center">
         <h3>Предсказание</h3>

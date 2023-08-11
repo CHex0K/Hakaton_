@@ -31,7 +31,7 @@
         <font color="black" size="7">ШАБЛОН</font>
       </h1>
     </div>
-    <div class="container text-center">
+    <div class="container">
       <div class="row">
         <!--start region carousel-->
         <div class="col-5">
@@ -150,7 +150,7 @@
           <div>
             <label
               >Бренд:
-              <input placeholder="Бренд" type="text" class="brend" required
+              <input placeholder="Бренд" type="text" class="brand" required
             /></label>
             <label
               >Продукт:
@@ -172,6 +172,10 @@
           </div>
 
           <div class="description-block">
+            <label>Выберите нейросеть:</label>
+            <br><input type="radio" id="AI_1" value="gpt" name="nameofAI" class="1" onclick="select_AI(1)"><label >1</label></br>
+            <input type="radio" id="AI_2" value="llama2" name="nameofAI" class="2" onclick="select_AI(2)"><label>2</label>
+
             <div><p>Описание:</p></div>
             <textarea
               placeholder="Введите описание"
@@ -211,6 +215,13 @@
         </div>
         <!--end region form-->
       </div>
+    </div> 
+    <div class="calc">
+      <label>Цена:<input placeholder="Цена" type="text" class="cost" required/></label>
+      <label>Скидка:<input placeholder="Скидка" type="text" class="" required/></label>
+      <label>Цена:<input placeholder="Цена" type="text" class="cost" required/></label>
+      <label>Цена:<input placeholder="Цена" type="text" class="cost" required/></label>
+      <label>Цена:<input placeholder="Цена" type="text" class="cost" required/></label>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"

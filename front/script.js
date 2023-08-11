@@ -7,3 +7,4 @@ function myClick() {
   let category = document.querySelector(".category").value;
   let description = document.querySelector(".description").value;
 }
+function Click_gen_feedback() {}

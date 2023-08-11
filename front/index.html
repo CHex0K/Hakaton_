@@ -173,8 +173,8 @@
 
           <div class="description-block">
             <label>Выберите нейросеть:</label>
-            <br><input type="radio" id="AI_1" value="gpt" name="nameofAI" class="1" onclick="select_AI(1)"><label >1</label></br>
-            <input type="radio" id="AI_2" value="llama2" name="nameofAI" class="2" onclick="select_AI(2)"><label>2</label>
+            <br><input type="radio" id="AI_1" value="gpt" name="nameofAI" class="1" onclick="select_AI()"><label >GPT</label></br>
+            <input type="radio" id="AI_2" value="llama2" name="nameofAI" class="2" onclick="select_AI()"><label>llama2</label>
 
             <div><p>Описание:</p></div>
             <textarea
@@ -216,12 +216,13 @@
         <!--end region form-->
       </div>
     </div> 
-    <div class="calc">
-      <label>Цена:<input placeholder="Цена" type="text" class="cost" required/></label>
-      <label>Скидка:<input placeholder="Скидка" type="text" class="" required/></label>
-      <label>Цена:<input placeholder="Цена" type="text" class="cost" required/></label>
-      <label>Цена:<input placeholder="Цена" type="text" class="cost" required/></label>
-      <label>Цена:<input placeholder="Цена" type="text" class="cost" required/></label>
+    <div class="calc text-center">
+      <h3 class="text-center">Калькулятор увеличения продаж</h3>
+      <br><label>Цена: <br> <input placeholder="Цена" type="text" class="cost" required/></br></label></br>
+      <br><label>Скидка: <br> <input placeholder="Скидка" type="text" class="discount" required/></br></label></br>
+      <br><label>Рейтинг: <br> <input placeholder="Рейтинг" type="text" class="rating" required/></br></label></br>
+      <br><label>В наличии: <br> <input placeholder="Количество" type="text" class="inStock" required/></br></label></br>
+      <br><label>Отзывы: <br> <input placeholder="Количество" type="text" class="Feedback" required/></br></label></br>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"

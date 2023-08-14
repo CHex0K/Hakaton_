@@ -16,7 +16,7 @@ form {
 }
 .row {
   margin-top: 10px;
-  width: 1500px;
+  width: 1800px;
 }
 .pack {
   background-color: rgb(200, 200, 250);
@@ -28,8 +28,9 @@ form {
 .description,
 .feedback,
 .keyWords {
-  width: 500px;
+  width: 400px;
   max-height: 200px;
+  min-height: 53px;
 }
 .description-block {
   margin-top: 10px;
@@ -38,31 +39,39 @@ p {
   margin: 0;
 }
 .container {
-  margin: 0;
   padding-right: 300;
 }
 .generation-button-img {
-  width: 50px;
+  width: 30px;
   text-align: center;
   margin-bottom: 2px;
 }
 .generation-button {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   padding: 0;
+  position: relative;
+  bottom: 30px;
 }
 .wastebasket-img {
-  width: 50px;
+  width: 30px;
+}
+.wastebasket-button {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  bottom: 30px;
+  padding: 0;
 }
 .calc {
   width: 500px;
-  height: 550px;
+  height: 700px;
   margin: 50px;
   margin-right: 0px;
   background-color: antiquewhite;
 }
 .container1 {
-  width: 500px;
+  width: 600px;
 }
 .calc2 {
   width: 300px;

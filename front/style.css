@@ -1,12 +1,23 @@
 body {
-  background-color: #ffffff;
+  background-color: #111111;
 }
 h1 {
   font-family: "Russo One", sans-serif;
   margin: 1cm;
+  color: #f4f4f4;
 }
 h2 {
   margin: 20px;
+  color: #f4f4f4;
+}
+h6 {
+  color: #f4f4f4;
+}
+label {
+  color: #f4f4f4;
+}
+output {
+  color: #f4f4f4;
 }
 form {
   background-color: #ffffff;
@@ -37,6 +48,7 @@ form {
 }
 p {
   margin: 0;
+  color: #f4f4f4;
 }
 .container {
   padding-right: 300;
@@ -72,10 +84,16 @@ p {
 }
 .container1 {
   width: 600px;
+  background-color: #373737;
+  margin-left: 10px;
+  border-radius: 30px;
 }
 .calc2 {
   width: 300px;
   height: 500px;
   margin: 50px;
   background-color: antiquewhite;
+}
+input {
+  color: #ffffff;
 }

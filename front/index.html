@@ -200,7 +200,8 @@
           </div>
           <h6>Отрегулируйте длинну описания</h6>
           <input type="range" value="750" min="1" max="1500" id="rangeOfDescription" onchange='getRange()' oninput="this.nextElementSibling.value = this.value">
-          <output>750</output>
+          <output >750</output>
+          <label></label>
           <div class="feedback-block">
             <p>Отзыв:</p>
             <textarea
@@ -227,15 +228,13 @@
       <div class="calc container">
         <h3 class="text-center">Калькулятор увеличения продаж</h3>
         <div class="col-6 text-center"> 
-          <br><label>Цена: <br> <input placeholder="Цена" type="text" class="cost" required/></br></label></br>
-          <br><label>Скидка: <br> <input placeholder="Скидка" type="text" class="discount" required/></br></label></br>
-          <br><label>Рейтинг: <br> <input placeholder="Рейтинг" type="text" class="rating" required/></br></label></br>
+          <br><label>Позиция в категории: <br> <input placeholder="Позиция" type="text" class="categoryPosition" required/></br></label></br>     
           <br><label>В наличии: <br> <input placeholder="Количество" type="text" class="inStock" required/></br></label></br>
           <br><label>Отзывы: <br> <input placeholder="Количество отзывов" type="text" class="Feedback" required/></br></label></br>
-          <br><label>Символы в описании: <br> <input placeholder="Количество символов" type="text" class="FeedbackCount" required/></br></label></br>
+          <br><label>Рейтинг: <br> <input placeholder="Рейтинг" type="text" class="rating" required/></br></label></br>
+          <br><label>Цена: <br> <input placeholder="Цена" type="text" class="cost" required/></br></label></br>
           <br><label>Запросы: <br> <input placeholder="Количество запросов" type="text" class="requestCount" required/></br></label></br>
-          <br><label>Позиция в категории: <br> <input placeholder="Позиция" type="text" class="categoryPosition" required/></br></label></br>     
-          
+          <br><label>Скидка: <br> <input placeholder="Скидка" type="text" class="discount" required/></br></label></br>
         </div>
       </div>
       <div class="calc2 text-center">

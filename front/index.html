@@ -173,7 +173,6 @@
               <input placeholder="Состав" type="text" class="sostav" required
             /></label>
           </div>
-
           <label>Выберите нейросеть:</label>
           <br><input type="radio" id="AI_1" value="gpt" name="nameofAI" class="1" onclick="select_AI()"><label >GPT</label></br>
           <input type="radio" id="AI_2" value="llama2" name="nameofAI" class="2" onclick="select_AI()"><label>llama2</label>
@@ -200,7 +199,7 @@
             </button>
           </div>
           <h6>Отрегулируйте длинну описания</h6>
-          <input type="range" value="750" min="1" max="1500" id="rangeOfDescription" oninput="this.nextElementSibling.value = this.value">
+          <input type="range" value="750" min="1" max="1500" id="rangeOfDescription" onchange='getRange()' oninput="this.nextElementSibling.value = this.value">
           <output>750</output>
           <div class="feedback-block">
             <p>Отзыв:</p>

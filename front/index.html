@@ -28,7 +28,7 @@
   <body>
     <div class="text-center">
       <h1>
-        <font color="black" size="7">ШАБЛОН</font>
+        <font size="7">ШАБЛОН</font>
       </h1>
     </div>
     <div class="container">
@@ -148,6 +148,7 @@
         <!--end region foto-galery-->
         <!--start region form-->
         <div class="container1 col-6">
+          <h1></h1>
           <input type="file" accept="image/*" id="files" multiple />
           <h2>Характеристики товара</h2>
           <div>
@@ -184,6 +185,7 @@
           <div class="description-block">
             <div><p>Описание:</p></div>
             <textarea
+              id="description"
               placeholder="Введите описание"
               class="description"
             ></textarea>
@@ -194,16 +196,17 @@
                 onclick="myClick()"
               />
             </button>
-            <button type="reset" class="wastebasket-button">
+            <button type="reset" id="wastebasket-button-1" class="wastebasket-button" onclick="clearDescription()">
                 <img src="/img/wastebasket.png" class="wastebasket-img" />
             </button>
           </div>
-          <h6>Отрегулируйте длинну описания</h6>
-          <input type="range" value="750" min="1" max="1500" id="rangeOfDescription" onchange='getRange()' oninput="this.nextElementSibling.value = this.value">
+          <h6>Отрегулируйте количество слов в описании</h6>
+          <input type="range" value="750" min="100" max="300" id="rangeOfDescription" onchange='getRange()' oninput="this.nextElementSibling.value = this.value">
           <output id="out">750</output>
           <div class="feedback-block">
             <p>Отзыв:</p>
             <textarea
+              id="feedback"
               placeholder="Введите отзыв"
               class="feedback"
             ></textarea>
@@ -214,7 +217,7 @@
                 onclick="Click_gen_feedback()"
               />
             </button>
-            <button type="reset" class="wastebasket-button">
+            <button type="reset" id="wastebasket-button-2" class="wastebasket-button" onclick="clearFeedback()">
               <img src="/img/wastebasket.png" class="wastebasket-img" />
             </button>
           </div>

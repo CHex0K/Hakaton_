@@ -40,7 +40,7 @@
               <div class="carousel-item active w-100">
                 <figure class="figure">
                   <img
-                    src="https://basket-10.wb.ru/vol1370/part137005/137005928/images/big/1.jpg"
+                    src="kekw.png"
                     width="500"
                     class="figure-img img-fluid rounded"
                     alt="..."
@@ -124,7 +124,7 @@
           style="width: 200px; height: 722px"
         >
           <img
-            src="https://basket-10.wb.ru/vol1370/part137005/137005928/images/big/1.jpg"
+            src="kekw.png"
             class="ImgRight figure-img img-fluid rounded"
             alt="..."
             id="mainImage1"
@@ -243,10 +243,56 @@
       <div class="calc2 text-center">
         <h3>Предсказание</h3>
         <input class="prediction" type="text">
-        <button class="predictionGET" onclick="getPrediction()">Получить</button>
+        <br><button class="predictionGET" onclick="getPrediction()">Получить</button></br>
       </div>
     </div>
     <!--end calc-prediction-->
+    <div>
+      <input type="file" id="thumbnail" />
+    </div>
+    <div>
+      <img id="preview" src="" alt="thumbnail" />
+    </div>
+    <button onclick="SETimg()">button1</button>
+    <button onclick="postimg()">button2</button>
+    <script>
+      const input = document.getElementById("thumbnail");
+
+      input.addEventListener("change", (event) => {
+        const image = event.target.files[0];
+
+        const reader = new FileReader();
+
+        reader.readAsDataURL(image);
+        reader.addEventListener("load", () => {
+          localStorage.setItem("thumbnail", reader.result);
+        });
+      });
+      function SETimg() {
+        const thumbnail = localStorage.getItem("thumbnail");
+
+        const previewImage = document.getElementById("preview");
+
+        if (thumbnail) {
+          previewImage.setAttribute("src", thumbnail);
+        } else {
+          previewImage.setAttribute("src", "default.jpg");
+        }
+        alert(thumbnail);
+      }
+      function postimg() {
+        const file = localStorage.getItem("thumbnail");
+
+        const xhr = new XMLHttpRequest(); // создаем объект XMLHttpRequest
+        const formData = new FormData(); // создаем объект FormData для передачи файла
+
+        formData.append("file", file); // добавляем файл в объект FormData
+
+        xhr.open("POST", "/upload"); // указываем метод и URL сервера, куда будет отправлен файл
+        xhr.send(formData); // отправляем запрос на сервер с помощью метода send()
+        alert("img is send");
+      }
+    </script>
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
